@@ -1,17 +1,18 @@
-package CapaDomini;
+package test;
 
-import static org.junit.Assert.*;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-public class TestPatrÛAdatador {
+import static org.junit.jupiter.api.Assertions.*;
+
+public class TestPatr√≥Adatador {
 	
 	private IPersonatge escut;
 	private IPersonatge Mag;
 	private IPersonatge vengatiu;
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		Mag = new AdaptadorPersonatgeMag(new double[]{2,0.5});
 		escut = new AdaptadorPersonatgeAmbEscut(new double[]{5,3});
